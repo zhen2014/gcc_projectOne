@@ -1,0 +1,1285 @@
+2020-05-27
+            提交3.5.4版本专家端  肝胆视频 课件  精品课程 三个模块
+           准备 万方U盘 
+
+
+
+
+
+2020-05-26 周二 
+
+            //万方医学  
+     
+           //下午会议，提交测试
+
+
+           // 学习内容  每天 或者是每2小时查看微信 --overnofly  bu yong di mi zi ze bu rang ai    dan wu xue xi le nishuoshiba enenshide
+
+          //从下个版本开始 遵循代码编码模式  https://www.jianshu.com/p/f702184ba8a9
+
+   
+         1：下载失败但不影响重新下载 将顶部文字更改一下即可。课件详情页
+         2：在公司电脑上 .pch.pch error ：：： 退出模拟器 --- clean下工程 ----重新编译下---- run
+
+
+
+2020-05-25 周一
+
+ 111111111：6月30日 上架前 必须更改好  ： 6：30号之前必须使用xcode storybosrd来提供app的启动横屏。
+ 222222222： 2020 年 4 月起 App Store 将不再接受使用 UIWebView 的新 app（变成6月30日），2020 年 12 月起将不再接   受使用 UIWebView 的 app 更新。
+
+
+      1：  下载失败 请重试 怎么 钱以及免费次数 怎么回退？
+           a:有免费次数的 重新请求接口 后台给加上一次？？？
+           b:钱的话 返回到我的账户里？？？
+           王成欣 思维：：：：下载失败但不影响重新下载 将顶部文字更改一下即可。课件详情页
+
+
+        downLoaded = @"no";
+        downloadState = @"downloadFalse";
+        NSString * name = @"重新下载本课件";
+        NSMutableAttributedString * mAttribute = [[NSMutableAttributedString alloc] initWithString:name];
+        [mAttribute addAttribute:NSForegroundColorAttributeName
+                           value:[UIColor whiteColor]
+                           range:NSMakeRange(0, name.length)];
+        [self getSystemTimeFromServer];
+        [downBtn setAttributedTitle:mAttribute forState:UIControlStateNormal];
+        
+        [downBtn setImage:[UIImage imageNamed:@""] forState:(UIControlStateNormal)];
+
+
+向后台传递参数：free remainderCount money
+
+
+
+// 根据NSData对象创建，可以继续上次进度下载
+NSURLSessionDownloadTask *downloadTask = [session downloadTaskWithResumeData:resumeData];
+ 
+// 根据NSURLRequesta对象创建，开启新的下载
+NSURLSessionDownloadTask *downloadTask = [session downloadTaskWithRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:model.url]]];
+
+
+next：2020-05-25  周二 提交测试并总结下版本内容万方医学免费下载以及U盘领取等总结
+
+
+
+//在我的手机上就行  周主任的那个
+https://developer.apple.com/cn/support/app-account/
+使用 Apple Developer App 注册和管理您的帐户
+中国大陆境内的开发者可以使用 Apple Developer app 来注册 Apple Developer Program，验证他们作为现有帐户持有人的身份，接受帐户持有人角色转让，以及管理自动续期订阅。
+
+https://developer.apple.com/cn/support/app-account/
+
+使用 Apple Developer App 注册和管理您的帐户
+中国大陆境内的开发者可以使用 Apple Developer app 来注册 Apple Developer Program，验证他们作为现有帐户持有人的身份，接受帐户持有人角色转让，以及管理自动续期订阅。ok 已搞定 段主任的邮件直接拨打那个电话就行
+
+2020-05-21  周五
+          
+            1：肝胆视频好像可以了 ok
+            2：我的福利--->福利详情接口 OK
+            3：肝胆课件--福利次数使用后 下载文章删除 显示文字还是显示需要多少钱 --应该是（重新下载本课件）已ok
+            4：精品课程 order_id 订单id  ok  看能不能看全部 ?亮亮测试反馈
+            //下周交付亮亮测试
+
+ ：：：：：：：：下载失败请重试 解决方案？？？？  支付过钱之后 使用了免费次数等？？这种怎么办？？
+
+
+/var/mobile/Containers/Data/Application/40D6077A-CF2A-4337-9AD4-580F1AC7DFE0/Documents/557bad4f8e6949bdb0bea72ea66f59ac.pdf
+
+/var/mobile/Containers/Data/Application/40D6077A-CF2A-4337-9AD4-580F1AC7DFE0/Documents/557bad4f8e6949bdb0bea72ea66f59ac.pdf
+
+2020-05-21  周四 
+
+肝胆课件 免费次数后的 显示问题  还要支付？
+
+调试最新接口
+
+//                gzz20200521 接口调试
+
+
+A:福利整合课件说明 usewalfare
+1、ganDanFileDetials 接口中增加 WelfareNum （课件福利剩余次数）字段
+2、app需判断freeRecord和WelfareNum 两个字段是否大于0，如果都大于0，优先使用WelfareNum 来下载
+3、使用WelfareNum 下载课件时，第一步调用useWelfareNum接口，若接口返回code值为1，则继续调用downloadGanDanFile接口，downloadGanDanFile接口的order_id字段需传‘USEWELFARENUM’，其余不变
+下载失败 扣钱了怎么弄？？？？？
+
+
+B:福利详情列表
+地址：expertAPI/welfareList
+参数 type  1视频  2课件   3精品课程   4万方   5U盘
+  page  页码
+
+
+
+ 下班之前跟沈老师回复
+ 今天我又修改了代码  等下个版本发布您在更新看看怎么样。
+
+
+
+   问题： fmdb数据丢失 gzz20200520 沈老师
+
+updateSession
+onReceiveDeskMessage
+ECMessage
+haredInstance] addNewMessa
+
+openDataBasePath:
+
+1：以前出现过 后来自动恢复好的么？还是
+2：ChatFrom = @“Patient”
+3：    self.dataBase = [FMDatabase databaseWithPath:dbPath];
+
+
+做了一下修改   2个地方：
+1：#import "IMMsgDBAccess.h"
+中
+-(NSMutableDictionary *)loadSessionsWithChatFrom:(NSString *)ChatFrom{
+  是patient 加载所有数据
+}
+2：sessionviewcontroller.m
+
+//gzz20200520
+-(void)prepareDisplay {
+尽可能多的呈现 cell 行数
+   if ([contactsModel.style isEqualToString:@"1"]) {
+                [tenpArr addObject:sesssion];
+            }else{
+                if ([contactsModel.style isEqualToString:@"2"]) {
+                    }else{
+                    [tenpArr addObject:sesssion];
+                }
+            }
+}
+
+
+
+
+
+
+2020-05-20 周三   问题：沈老师反馈患者消息 消失问题 就是那个一行一行的那个。
+ganDanFileDetials 获取本页要展示的数据
+
+
+周三 调试接口 明天上架版本
+
+
+    NSString * allUrl = [NSString stringWithFormat:@"%@downloadGanDanFile?&gdf=%@&a=%d",IMAURLAPP,pinStr,valueINTT];
+
+
+REATE table session (
+sessionId TEXT NOT NULL PRIMARY KEY UNIQUE ON CONFLICT REPLACE, 
+
+dateTime INTEGER,
+
+type INTEGER,
+
+text varchar(2048),
+
+unreadCount INTEGER,
+
+sumCount INTEGER,
+
+state INTEGER,
+
+chatfrom TEXT
+
+
+)
+
+
+
+2020-05-18 -19  星期一  星期二
+code.txt  //gzz20200511  肝胆视频详情 页面 修改地方需要注意
+
+讨论了定了下个版本的需要做的版本情况 
+ 
+我的福利显示情况： 领取福利 直接不让 ：万方医学、U盘 
+福利详情展示：暂无数据即可
+
+注意 ：肝胆视频 详情页下载步骤；精品课程 下载流程ok
+
+
+
+2020-05-15 星期五
+
+  已经OK的
+  1：是否为我的患者
+  2：修改了患者端 一对多公益咨询无小红点提示问题  new - gzz1029 -patients 拷贝过来
+  3：调试  各个小红点无法消息的问题 设置帮助清除缓存 清除历史小红点消息
+  4：耐药问题 文字修改
+  5：针对跟随手机 《沈老师》设置与帮助的 箭头太大问题  箭头已经更改
+ 
+  问题： 沈老师的又卡了 杀死重新进入ok 沈老师的  亮亮：手机里有的app也会卡死 重启就好
+
+
+iOS第三方库源码 & 实现原理
+我们平常经常使用第三方库,例如:AFNetworking,MJRefresh,YYKit,SDWebimage,SDAutoLayout,Masonry.
+
+那么你是否去查看其第三方库是如何封装的?
+
+AFNetworking是如何实现异步访问网络请求,如何处理你传给他的数据字典,在AFN内部进行了几层封装?
+
+MJRefresh的实现原理是什么?
+ SDWebImage的缓存原理?
+ YYKit针对于FPS是如何优化的?
+ SDAutoLayout和Masonry的布局库原理有着怎么样的区别,其原理是依据什么进行布局的?谁的效率更高一点.
+ 还有很多的第三方库值得我们去学习.
+  
+ 
+  //右边的图片
+     UIImageView *imageviewR = [[UIImageView alloc]initWithFrame:CGRectMake(SCREEN_WIDTH-25-10, 12, 15, 15)];
+     //    imageviewR.image = [UIImage imageNamed:@"arrowIcon"];
+     imageviewR.image = [UIImage imageNamed:@"nextArrow"];
+    
+ 
+     [view addSubview:imageviewR];
+
+2020-05-14 周四
+    
+    是否是我的患者接口 
+    接口名： https://tapp.igandan.org/app/expertAPI/getRelation
+    参数：
+    {
+    "client_type" = I;
+    patientUuid = pDgN2xL0Ug7QG2vEbyb;
+    timestamp = 1589439086;
+    "user_uuid" = ql4gO6C90QjOhbo4azY;
+    version = "3.5.4";
+    }
+    返回值：code = 104； message = ”params error“  
+
+  已经OK
+
+
+
+
+    1： 清除缓存 打开了但是测试组还没有测试
+    2：是否是我的患者接口还没调试通 等待后台调试
+    3：今天务必争取上架3.5.4
+
+一些关于福利相关的总结
+
+a:isVideoDownloadRecord 是否缓存过该视频 ？？？ result - 0 无；1缓存过
+
+b:肝胆课件接口  ganDanFileDetials   免费次数字段:freeRecord
+
+c:肝胆视频  免费次数支付之后需要返回 result == 1；
+d:知识U盘 接口
+e:getRelation gzz20200424   20200514 周四 13:28:07
+    code = 104;
+   message = "params error";
+f:赠送积分的领取 接口  
+  福利明细   
+
+g:#pragma mark 我要兑换 
+-(void)jumpExchange{
+//  //            gzz20200507
+//  [self getSystemTimeFromServer:@"getWelfareNum"];
+//    gzz20200514  剩余次数   vc.fromWhat = @"video"
+//    还要一处是从积分商城那里兑换过来的
+//    if(video){ 剩余次数接口  提示明明上个页面显示已经兑换 就像肝胆视频那里一样}
+// [self getSystemTimeFromServer];
+h:gzz20200514  万方  #import "wfMagazineDetailVC.h"
+这里需要重新的积分下载 免费次数才能派上用处
+
+  
+
+由于ASDK的基本理念是在需要创建UIView时替换成对应的Node来获取性能提升，因此对于现有代码改动较大，侵入性较高，同时由于大量原本熟悉的操作变成了异步的，对于一个团队来说学习曲线也较为陡峭。
+
+从我们在实际项目中的经验，结合Scott的建议来看，
+不需要也不可能将所有UIView都替换成其Node版本。
+将注意力集中在可能造成主线程阻塞的地方，如tableView/collectionView、复杂布局的View、使用连续手势的操作等等。
+找到合适的切入点将一部分性能需求较高的代码替换成ASDK，会是一个较好的选择。
+
+asyncdisplay demo
+gzz20200514  uicolor *color = parameters[@"color"];
+
+
+2020-05-13 星期三 
+ 
+
+
+2020-05-12  专家端：公益咨询小红点   gzz20200512  
+
+1： 是不是我的随访患者 gzz20200424
+2：清除缓存中 设置了清除哪些东西  
+@"TISHILASHOW"
+
+
+
+ 患者端：送花卡死了？
+
+
+       // BOOL flag = [NSKeyedArchiver archiveRootObject:@[@[],@[],@[]] toFile:homePath];//归档一个字符串 返回是否成功
+
+
+
+    NSString * homeDictionarys = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex: 0]; //获取根目录
+    NSString *homePath  = [homeDictionarys stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.archiver",[[NSUserDefaults standardUserDefaults]objectForKey:@"Uuid"]]];//添加储存的文件名
+    messsolove.allArray  =  (NSMutableArray *)[NSKeyedUnarchiver unarchiveObjectWithFile:homePath];
+    if (messsolove.allArray.count  == 0) {
+
+        
+        if ([homePath isEqualToString:@"null"]) {
+            return messsolove ;
+        }
+        
+        BOOL flag = [NSKeyedArchiver archiveRootObject:@[@[],@[],@[]] toFile:homePath];//归档一个字符串 返回是否成功
+        NSLog(@"==%d",flag);
+        
+    }
+
+
+
+  //send_type（发送方类型 1.患者 2.专家）,receiver_type（接收方类型 1.患者 2.专家）,chat_from（来源1.公益咨询 2.随访 3.vip）,chat_from_uuid（如果是公益咨询，则存uuid，否则0）
+    NSString *UserData = @"1,2,2,0";
+1 2 1 uuid
+
+
+
+2020-05-11 
+mvvm 
+
+  gzz20200511 肝胆课件   
+
+  抹除我的记忆
+  重新做一个孩子吧
+
+新增页面： 知识U盘页面 
+#import "UpanExchangeVC.h"
+ 
+
+isVideoDownloadRecord 是否缓存过该视频 ？？？ result - 0 无；1缓存过
+
+肝胆课件接口  ganDanFileDetials   免费次数字段:freeRecord
+
+1:肝胆视频  免费次数支付之后需要返回 result == 1；
+2:知识U盘 接口
+
+
+
+
+2020-05-09 gzz20200509 肝胆视频 积分兑换
+-ktopheight
+
+
+随访患者申请过多不会刷新页面 gzz20200509
+isVideoDownloadRecord 是否缓存过该视频 ？？？ result - 0 无；1缓存过
+
+
+NSMutableAttributedString * attriStr = [[NSMutableAttributedString alloc] initWithString:@"缓存中"];
+                         [attriStr addAttribute:NSForegroundColorAttributeName value:[UIColor whiteColor] range:NSMakeRange(0, 3)];
+         [cacheBtn setAttributedTitle:attriStr forState:(UIControlStateNormal)];
+         [self ddownloadddVideos:self.polyv_uuidStr];
+ isVideoStorestr =   @"1";
+
+2020-05-08  
+     expertAPI/getWelfareNum  gzz20200507
+
+             周五  专家端3.5.3版本 
+             上架通过后 强制更新 5.3.3
+SEL 方法选择器  IMP 具体实现
+ 方法缓存 hash查找 快速
+
+
+ 在当前类中查找 已排序 二分查找  
+
+ 未排序  遍历
+
+父类逐级查找 super_class  NSObject
+
+arc是llvm与runtime相互作用的结果
+
+聊天框四行时不容易 移动光标  变成2行 差不多
+
+
+  
+2020-05-07 周四 
+
+问题：段院长 1150/10  115>114应该有提醒的 没有提醒??? 没有解决
+gzz20200507 
+
+1：肝胆视频 福利下载之后 提示字的改变 变成免费
+2：肝胆课件 get use
+3：精品课程 get use
+4：万方医学 get use
+
+
+  
+
+
+2020-05-06 五一后的第一天上班 有点晕乎乎的
+          脖子有点疼 没有枕头的原因
+   
+        1:修改专家端页面 设置帮助 线条页面
+
+        我的福利
+        后台接口 赠送积分的领取 后台数据还没返回
+        福利明细 没给 
+       
+        问题1：知识U盘如何领取？ 跳转到积分商城？ 如何得知领取成功？ 后台状态改变显示已领取？
+        问题2：使用福利下载 提示情况 会议讨论
+
+      
+  UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"温馨提示" message:@"请使用密码登陆，资料通过后方可使用快速登录" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"确定", nil];
+                 [alert show];
+//gzz20200506
+     
+         
+
+
+2020-04-28 周三 
+
+     出诊计划修改 👍
+        专家端 患者端 版本更新了
+        现在开始做我的福利页面
+         
+gzz20200429 
+ 后台接口 赠送积分的领取 后台数据还没返回
+        福利明细 没给 
+       
+        问题1：知识U盘如何领取？ 跳转到积分商城？ 如何得知领取成功？ 后台状态改变显示已领取？
+        问题2：
+
+
+
+//我的福利-查询福利剩余次数  gzz20200429
+//地址：expertAPI/getWelfareNum //gzz20200414
+//参数type (1视频2课件3精品4万方5U盘)
+
+//我的福利-使用福利操作
+//地址：expertAPI/useWelfareNum
+//参数type (1视频2课件3精品4万方5U盘)
+
+#pragma mark getWelfareNum 查询福利剩余次数
+-(void)getWelfareNumRequest{
+      [MBProgressHUD hideHUDForView:self.view animated:YES];
+
+        NSString *Strurl = [NSString stringWithFormat:@"%@getWelfareNum",expertAPI];
+        NSMutableDictionary * dicM = [NSMutableDictionary dictionary];
+        dicM[@"client_type"] = [NSString stringWithFormat:@"%@",@"I"];
+        NSString * uuidStr = [NSString stringWithFormat:@"%@",[[NSUserDefaults standardUserDefaults]objectForKey:@"Uuid"]];
+        dicM[@"user_uuid"] = [NSString stringWithFormat:@"%@",uuidStr];//2
+        NSString *timestamp = [NSString stringWithFormat:@"%@",[DicRemove getNowTimeTimestamp]];
+        if (sysTimestr.length>2) {
+            dicM[@"timestamp"] = [NSString stringWithFormat:@"%@",sysTimestr];
+        }else{
+
+            dicM[@"timestamp"] = [NSString stringWithFormat:@"%@",timestamp];
+        }
+        dicM[@"version"] = [NSString stringWithFormat:@"%@",VERSONNUN];
+        dicM[@"type"] = [NSString stringWithFormat:@"%@",@"1"];
+
+        
+        NSArray *arr = @[@"client_type",@"version",@"timestamp",@"user_uuid",@"type"];
+        
+        MCLog(@"=====%@",dicM);
+        WEAKSELFS
+        [GDNetworkManager postWithURLString:Strurl parameters:nil keys:arr parameterDic:dicM success:^(NSDictionary *data) {
+            NSString *code  = [NSString stringWithFormat:@"%@",data[@"code"]];
+            if ([code isEqualToString:@"1"]) {
+                
+                NSString *num = [NSString stringWithFormat:@"%@",data[@"WelfareNum"]];
+                if (![DicRemove isBlankString:num]) {
+                    NSInteger numCount = [num integerValue];
+                    if (numCount >0) {
+                        [weakSelf getSystemTimeFromServer:@"usewalfare"];
+                    }else{
+//                        积分那里
+                    }
+                }
+
+            }else{
+
+                [self showHint:data[@"message"]];
+            }
+          
+           [MBProgressHUD hideHUDForView:self.view animated:YES];
+             
+        } failure:^(NSError *error) {
+            [self showHint:@"请求失败"];
+            [MBProgressHUD hideHUDForView:self.view animated:YES];
+        }];
+    
+    
+}
+
+
+#pragma mark useWelfareNum 使用福利操作
+-(void)useWelfareNumRequest{
+    
+         [MBProgressHUD hideHUDForView:self.view animated:YES];
+            NSString *Strurl = [NSString stringWithFormat:@"%@useWelfareNum",expertAPI];
+            NSMutableDictionary * dicM = [NSMutableDictionary dictionary];
+            dicM[@"client_type"] = [NSString stringWithFormat:@"%@",@"I"];
+            NSString * uuidStr = [NSString stringWithFormat:@"%@",[[NSUserDefaults standardUserDefaults]objectForKey:@"Uuid"]];
+            dicM[@"user_uuid"] = [NSString stringWithFormat:@"%@",uuidStr];//2
+            NSString *timestamp = [NSString stringWithFormat:@"%@",[DicRemove getNowTimeTimestamp]];
+            if (sysTimestr.length>2) {
+                dicM[@"timestamp"] = [NSString stringWithFormat:@"%@",sysTimestr];
+            }else{
+
+                dicM[@"timestamp"] = [NSString stringWithFormat:@"%@",timestamp];
+            }
+            dicM[@"version"] = [NSString stringWithFormat:@"%@",VERSONNUN];
+            dicM[@"type"] = [NSString stringWithFormat:@"%@",@"1"];
+
+            
+            NSArray *arr = @[@"client_type",@"version",@"timestamp",@"user_uuid",@"type"];
+            
+            MCLog(@"=====%@",dicM);
+            WEAKSELFS
+            [GDNetworkManager postWithURLString:Strurl parameters:nil keys:arr parameterDic:dicM success:^(NSDictionary *data) {
+                NSString *code  = [NSString stringWithFormat:@"%@",data[@"code"]];
+                if ([code isEqualToString:@"1"]) {
+//                    使用成功 之后的操作 gzz20200429
+
+
+                }else{
+
+                    [self showHint:data[@"message"]];
+                }
+              
+               [MBProgressHUD hideHUDForView:self.view animated:YES];
+                 
+            } failure:^(NSError *error) {
+                [self showHint:@"请求失败"];
+                [MBProgressHUD hideHUDForView:self.view animated:YES];
+            }];
+}
+
+
+
+
+2020-04-28 周二
+               修改患者端最新/最热   撤销 修改版本号即可 ；提交5.3.3版本
+
+               等待审核通过 
+               做专家福利那块
+
+
+            expertAPI/getRelation 是否是患者、？？可以先不动
+
+
+
+
+2020-04-27 ECChatTableView 周一  协助王成欣查看图片问题
+   容联demo  设置url无后缀图片 可以打开
+  gzz20200427
+ 上架专家端5.3.2 患者端5.3.2 版本
+  
+修改聊天键盘光标不容易滑动问题
+
+
+2020-04-26 星期日 补班
+          appid登录验证
+更改手机号
+
+证书相关 5月24证书问题 看能不能发送等 
+
+
+
+2020-04-24   周五
+               修改 常见问题跳转 改回原来的
+             #pragma mark 是不是我的随访患者 ff
+            //gzz20200424 公益咨询我已回答小红点消失不掉
+            短信业务 叮当没有权限查
+            可以去线上官网问
+       
+        1、专家端--聊天发送图文科普，有时候存在页面加载不出来的情况。此时发送视频科普是正常的?????? 初步了解是解析网络页面问题
+        3、专家端--公益咨询---存在小红点消不掉的情况??? ???
+
+    _photoImageview.layer.masksToBounds = YES;
+    _photoImageview.layer.cornerRadius  = 20;
+     [_photoImageview sd_setImageWithURL:[NSURL URLWithString:imagename] placeholderImage:[UIImage imageNamed:@"patientMoren"]];
+
+
+2020-04-23 周四 
+
+http://wx.igandan.com/changjianwenti.jsp?share=1
+iOS：
+1、专家端--聊天发送图文科普，有时候存在页面加载不出来的情况。此时发送视频科普是正常的??????
+2、患者端---送花提醒弹框，点击X号时已输入的文字还在，跳转支付页面返回后已输入的文字被清空了 ok
+3、专家端--公益咨询---存在小红点消不掉的情况??? ???
+
+4、APP---常见问题--替换为新链接。???? ok 
+5、患者端----我的家园----点击头像加好友提示的页面，头像存在变形的问题 ok
+6、APP--在线支付页面存在iPhoneXS、11上图标变形的问题ok
+
+
+
+//            gzz20200423
+          vc.htmlPath = @"http://wx.igandan.com/changjianwenti.jsp?share=1";
+@"mianyi
+
+ zeroLiangImage.frame =  CGRectMake(SCREEN_WIDTH-28-5, 13.5, 23, 23);
+    专家端 ：肝胆视频 以及 我的 完成 接口调试  下午提交测试
+
+    患者端：
+_inputTextView.text
+
+  self.nnewOrHotBtn = [[RightIamgeviewSizeBtn alloc]initWithFrame:CGRectMake(0, 0, 100, 40)];
+       [bgSeleview addSubview:self.nnewOrHotBtn];
+       [self.nnewOrHotBtn  setTitle:@"最新" forState:0];
+       [self.nnewOrHotBtn  setTitleColor:JISECOLOR forState:0];
+       self.nnewOrHotBtn .titleLabel.font = SYSTEMFONTNEW(16.0);
+       [self.nnewOrHotBtn  setImage:[[UIImage imageNamed:@"newSimage"] originalImage] forState:0];
+       self.nnewOrHotBtn .backgroundColor = [UIColor whiteColor];
+       [self.nnewOrHotBtn  sizeToFit];
+       self.nnewOrHotBtn.frame = CGRectMake(SCREEN_WIDTH-11.5-_selectContentBtn.width-10-self.nnewOrHotBtn.width-5-5, 0,self.nnewOrHotBtn.width,40);
+     [self.nnewOrHotBtn addTarget:self action:@selector(newAndHotClick) forControlEvents:UIControlEventTouchUpInside];
+
+
+
+/*最新最热*/
+@property (nonatomic, strong) RightIamgeviewSizeBtn *nnewOrHotBtn;
+
+
+#pragma mark 最新最热
+- (void)newAndHotClick{
+    
+  
+    if ([newOrhotstr isEqualToString:@"2"]) {
+
+        [self.nnewOrHotBtn setTitle:@"最热" forState:0];
+        
+        [self.nnewOrHotBtn setImage:[[UIImage imageNamed:@"hotimageS"] originalImage] forState:0];
+        newOrhotstr = @"1";
+        
+    }else{
+        
+        [self.nnewOrHotBtn setTitle:@"最新" forState:0];
+        
+        [self.nnewOrHotBtn setImage:[[UIImage imageNamed:@"newSimage"] originalImage] forState:0];
+        
+        newOrhotstr = @"2";
+    }
+
+  numbers = 1;
+  [_dataMuarry removeAllObjects];
+  [self getSystemTimeFrom];
+    
+}
+
+
+
+
+
+
+ _rihgtnewAndhotBtn = [[RightIamgeviewSizeBtn alloc]initWithFrame:CGRectMake(0, 0, 100, 45)];
+    [self.view addSubview:_rihgtnewAndhotBtn];
+    [_rihgtnewAndhotBtn setTitle:@"最新" forState:0];
+    [_rihgtnewAndhotBtn setTitleColor:JISECOLOR forState:0];
+    _rihgtnewAndhotBtn.titleLabel.font = SYSTEMFONTNEW(16.0);
+    [_rihgtnewAndhotBtn setImage:[[UIImage imageNamed:@"newSimage"] originalImage] forState:0];
+    _rihgtnewAndhotBtn.backgroundColor = [UIColor whiteColor];
+    [_rihgtnewAndhotBtn sizeToFit];
+    
+    _rihgtnewAndhotBtn.frame = CGRectMake(((kMainScreenWidth)/2-_rihgtnewAndhotBtn.width)/2, _rihgtnewAndhotBtn.y, _rihgtnewAndhotBtn.width,45);
+    
+
+
+
+#pragma mark 最新最热
+- (void)newAndHotClick{
+    
+    _bgView.hidden = YES;
+    isNew = !isNew;
+    if (!isNew) {
+
+        [_rihgtnewAndhotBtn setTitle:@"最热" forState:0];
+        
+        [_rihgtnewAndhotBtn setImage:[[UIImage imageNamed:@"hotimageS"] originalImage] forState:0];
+        newsType = @"1";
+        
+    }else{
+        
+        [_rihgtnewAndhotBtn setTitle:@"最新" forState:0];
+        
+        [_rihgtnewAndhotBtn setImage:[[UIImage imageNamed:@"newSimage"] originalImage] forState:0];
+        
+        newsType = @"0";
+    }
+//    keyWordsStr = @" ";
+    keywordsPage = 1;
+    _keywordsArray= [[NSMutableArray alloc]init];
+    [self requestData];
+    
+}
+
+
+
+
+2020-04-22 周三 
+
+
+    UIButton * button = [[UIButton alloc]initWithFrame:CGRectMake(0, kMainScreenHeight-50-SafeAreaBottomHeight, kMainScreenWidth/2, 50)];
+    button.backgroundColor = RGB11(63, 199, 193);
+    [button setTitle:@" 患教视频" forState:(UIControlStateNormal)];
+    [button setImage:[UIImage imageNamed:@"huanvideo@2x"] forState:(UIControlStateNormal)];
+    [button addTarget:self action:@selector(callPhone) forControlEvents:(UIControlEventTouchUpInside)];
+    [self.view addSubview:button];
+    
+    UIButton * button1 = [[UIButton alloc]initWithFrame:CGRectMake(kMainScreenWidth/2, kMainScreenHeight-50-SafeAreaBottomHeight, kMainScreenWidth/2, 50)];
+    button1.backgroundColor = RGB11(63, 199, 193);
+    [button1 setTitle:@" 精品课程" forState:(UIControlStateNormal)];
+    [button1 setImage:[UIImage imageNamed:@"jinpingmake"] forState:(UIControlStateNormal)];
+    [button1 addTarget:self action:@selector(jumpTojingpin) forControlEvents:(UIControlEventTouchUpInside)];
+    [self.view addSubview:button1];
+    
+    UILabel *lab = [[UILabel alloc]initWithFrame:CGRectMake(0, 12, 1, 26)];
+    lab.backgroundColor = [UIColor whiteColor];
+    [button1 addSubview:lab];
+    
+
+dataRequestVIdeotype
+
+//    gzz20200422
+ 
+   上架通过 备份3.5.1 到硬盘
+  更新后遇到问题： 直接升级 退出登录会一闪而过隐私声明提示 明明手机测试下？
+   
+   专家端东西 我的 肝胆视频  积分 三部分
+
+
+
+2020-04-22 周二 
+   正式版测试组反馈问题-》 修改问题
+  晚上加班到七点上架app 
+
+
+2020-04-20周一
+  修改专家端 聊天公益咨询详情 问题
+ 
+     修改专家详情的英雄版提示字体
+
+ 
+     上架专家端
+     更新正式版患者端  测试后上架
+    
+     模拟网络不好 接收图片加载不出来 
+     1：容联demo处理方式2： 咨询容联人员
+ 
+      
+
+
+2020-04-18 
+     周六 加班解决容联聊天
+
+
+
+2020-04-17
+   -3:专家端闪退 显示界面放在主线程上
+   -2:专家端视频分享 
+   -1:专家端赠书活动 图片没替换完全
+   0:测试反馈：提示送花时 键盘挡住
+   1: 专家详情frame  -ktopheight问题 ok 
+   2:患者端提交测试
+   患者端 ：1： 发送图片模糊 2：专家详情页面   3：首页--肝病检测和直播互换  4：注销账户 5：隐私提示 6:提示送花（随访回答5次之后 公益3次之后）7：聊天
+
+
+2020-04-16 
+
+
+#define DEVICE_IS_IPHONE6P ([[UIScreen mainScreen] bounds].size.height == 736)
+#define DEVICE_IS_IPHONE6 ([[UIScreen mainScreen] bounds].size.height == 667)
+#define DEVICE_IS_IPHONE5 ([[UIScreen mainScreen] bounds].size.height == 568)
+#define DEVICE_IS_IPHONE4 ([[UIScreen mainScreen] bounds].size.height == 480)
+#define DEVICE_IS_IPHONEX ([[UIScreen mainScreen] bounds].size.height >= 812)
+
+     专家端 ： 注销账户 隐私提示    
+     患者端 ：1： 发送图片模糊 2：专家详情页面   3：首页--肝病检测和直播互换  4：注销账户 5：隐私提示 6:提示送花（随访回答5次之后 公益3次之后）
+ 
+          自如房租 ok    
+          注销账户  隐私提示   专家端首页
+ 
+2020-04-15 
+注销账户  if ([_isoffAccount isEqualToString:@"yes"]) {
+        [commitBtn setTitle:@"已确认风险，提交注销申请" forState:0];
+    }
+
+
+ 专家端 闪退两次 
+ 专家端： 视频分享  首页红配黄  聊天登录  首页赠书活动日期  首页赠书活动图标变形
+ 患者端： 专家详情页面  首页肝病检测和直播互换
+ 
+
+2020-04-14 
+加班解决：问题1 doc 注释 2 chatview 动
+
+
+setHeader 李明杰的 头像切圆问题
+
+周二 修改下载视频 页面修改 
+
+         小和图片
+
+
+2020-04-13 
+
+    周二明天任务: 1：测试3 5 公益咨询 我的专家 送花提示  ok 
+
+               2：专家端接口调试， 专家端我的UI界面接口调试  
+我的福利-查询福利剩余次数  展示形式？？？@小贺
+
+地址：expertAPI/getWelfareNum //gzz20200414
+参数type (1视频2课件3精品4万方5U盘)
+
+else if([str isEqualToString:@"getwalfare"]){
+            [weakSelf getWelfareNumRequest];
+  }else if([str isEqualToString:@"usewalfare"]){
+           [weakSelf useWelfareNumRequest];
+   }
+
+
+          isVideoStorestr =   @"1";
+         if (![DicRemove isBlankString:weakSelf.polyv_uuidStr] && [isHaveDownload isEqualToString:@"no"]) {
+              [rihgtStorePicBtn setTitle:@"缓存中" forState:0];
+//             [cacheBtn setTitle:@"视频缓存中" forState:0];
+             NSMutableAttributedString * attriStr = [[NSMutableAttributedString alloc] initWithString:@"缓存中"];
+                    [attriStr addAttribute:NSForegroundColorAttributeName value:[UIColor whiteColor] range:NSMakeRange(0, 3)];
+            [cacheBtn setAttributedTitle:attriStr forState:(UIControlStateNormal)];
+              coverRightView.frame = CGRectMake(0, coverRightView.y, SCREEN_WIDTH,44);
+              scorelaebl.hidden = YES;
+              [rihgtStorePicBtn sizeToFit];
+              rihgtStorePicBtn.frame = CGRectMake((coverRightView.width-rihgtStorePicBtn.width)/2, 0, rihgtStorePicBtn.width, 44);
+             
+             [weakSelf ddownloadddVideos:weakSelf.polyv_uuidStr];
+
+
+我的福利-使用福利操作
+地址：expertAPI/useWelfareNum
+参数type (1视频2课件3精品4万方5U盘)
+
+  YZNEWHEIGHT-kTopHeight-40-55-PatientsSafeAreaBottomHeight,
+
+               3：专家详情接口 三甲医院 三个名誉以及点击展示 
+
+
+               4：如有时间 肝胆视频+页面修改
+               
+
+
+/                MCLog(@"===随访患者==")
+//                 UIAlertController *alertController11 = [UIAlertController alertControllerWithTitle:@"是否给专家送个花呢？ 5个" message:nil preferredStyle:(UIAlertControllerStyleActionSheet)];
+//                   UIAlertAction *sureAction = [GccObject defaultPresentAlertViewName:@"确定" handle:^{
+//                             MCLog(@"确定");
+//                         }];
+//                   UIAlertAction *cancelAction = [GccObject canclePresentAlertViewName:@"取消" handle:^{
+//                       MCLog(@"取消");
+//                   }];
+//
+//                   [alertController11 addAction:sureAction];
+//                   [alertController11 addAction:cancelAction];
+//                   [self presentViewController:alertController11 animated:YES completion:nil];
+     图像不清晰 gzz20200413  0.8
+     设置到1.0
+238847 8740
+1080  == 403949  8740
+
+<UIImage:0x2810c79f0 anonymous {614, 1091}>
+
+<UIImage:0x281d6e400 anonymous {204, 364}>
+
+//            CGSize size = CGSizeMake(asset.pixelWidth / scale, asset.pixelHeight / scale);
+            CGSize size = CGSizeMake(asset.pixelWidth , asset.pixelHeight);
+去掉scale了 就好了
+谨记：：：：
+  NSString *urlss = [NSString stringWithFormat:@"%@",Public_URL];
+    if ([urlss isEqualToString:@"https://tapp.igandan.org/app/patient/"]) { //测试端不让检测证书 gzz20200413
+        AFSecurityPolicy *securityPolicy =  [AFSecurityPolicy defaultPolicy];
+        // 客户端是否信任非法证书
+        securityPolicy.allowInvalidCertificates = YES;
+        // 是否在证书域字段中验证域名
+        securityPolicy.validatesDomainName = NO;
+        self.securityPolicy = securityPolicy;
+    }
+
+
+
+2020-04-10 
+
+ 
+     1：测试更换证书后的专家端患者端是不是卡顿 请求数据出问题； 结果 是没有问题的’
+ 下周工作内容：
+     2：chatviewcontroller中 //  
+       gzz20200407三个五个的推送 提示 明天接着测试 三个五个存储在本地
+     3:患者端：专家详情那里 名誉数据 接口反馈 以及UI设计展示
+     4：专家端：a:肝胆视频最新最热，讨论以及接口；b:我的-名誉  展示
+     
+
+
+
+2020-04-09  
+   经测试得到是证书问题 后台人员申请证书，阿里巴巴的
+  a:看没有afn配置的怎么样 如果可以先可以这样
+  b:不行的话 上架最新版本  调试证书 加班到七点
+
+配置证书OK
+
+明明手机又卡了 gzz20200409 注释内容！！！！！！谨记 谨记 找到来时的路
+          1：早上时间段？  先这样测试：跑一个没有注释的多跑几次  b:都注释然后测试看看卡不卡 3:sdk注释 通知
+           4：切换网络后可解决???  https证书问题？ 让明明配个cer证书测试一下
+           5:已经备份在 硬盘中2020-04-08\9
+           6：证书问题 更换最新证书 申请证书
+
+ https- http
+
+SSL证书
+
+问题：
+ - PSTRegisterClass 
+  Warning! ivar size mismatch in PSUICollectionView_ - can't change the superclass.
+
+ - register ok for token [2a52daadac5d24dcb79e44d7e5b10f037b9bb631f9853d8825fc70d9eb4c015d]! 
+
+- register param [{
+    device_token = 2a52daadac5d24dcb79e44d7e5b10f037b9bb631f9853d8825fc70d9eb4c015d;
+    header = {
+    sdk_version = 1.4.0(af8c179);
+    language = zh-Hans;
+    country = CN;
+    app_version = 3;
+    sdk_type = iOS;
+    oid = a0ca4dfb184b4f41c75c214826a20afa495cb8b6;
+    channel = App Store;
+    resolution = 1334 x 750;
+    os = iOS;
+    short_version = 3.4.8;
+    package_name = cn.shangyu.gdxzPatients;
+    req_time = 1586392683.191728;
+    access = WiFi;
+    carrier = 中国联通;
+    idfv = F1C75E61-9A16-4AC4-B01E-FAF793250A5C;
+    timezone = 8;
+    is_jailbroken = NO;
+    device_model = iPhone10,1;
+    os_version = 11.4;
+    display_name = 肝胆相照;
+    utdid = XdTx7HJK3acDAFZ1BBSVU6fq;
+    appkey = 566fa456e0f55a546d001b93;
+    is_pirated = YES;
+}
+
+
+
+2020-04-08 1：武汉解封了
+           2：今早测试 没有出现昨天情况
+           3:友盟推送证书的配置 专家端患者端都ok 看明天是不是还会出现这样的情况
+           4:如果再出现此问题将  保利威视 ；容联 ；友盟推送、分享； 各个sdk注册都注释一下 看看是不是问题出在此处
+           5：配置请求参数的问题？checksignal
+           6：iOS 配置https 配置证书？？
+           7：手机网络 wifi处 转圈。。。网络慢
+
+问题：两端聊天内容有问题 接收不到  ===》容联的服务器升级 读取数据库的时候延迟了。 
+问题就是用来被解决的。 早点接收到早点解决 解决不了也可以用另外的方法去执行 转移它 ；最后做到另一种意义上的解决。
+
+a:直奔主题 媛问情况 b:iv post  
+我可以的 相信自己：坚持一件事不容易 久久养成好的习惯  会带来好的效果 
+
+
+2020-04-07 启动慢--卡顿  考虑是网络原因
+          
+=================================================================
+Main Thread Checker: UI API called on a background thread: -[UIApplication applicationState]
+PID: 351, TID: 33910, Thread name: (none), Queue name: com.apple.root.default-qos, QoS: 21
+Backtrace:
+4   Patient                             0x0000000101f238c4 -[UTSelfStaticsManager getAppState] + 60
+5   Patient                             0x0000000101f237c0 -[UTSelfStaticsManager onEventForCrash] + 256
+6   Patient                             0x0000000101f02780 __40-[UTMCSystemHook appDIdEnterBackground:]_block_invoke.51 + 196
+7   libdispatch.dylib                   0x000000010502949c _dispatch_call_block_and_release + 24
+8   libdispatch.dylib                   0x000000010502945c _dispatch_client_callout + 16
+9   libdispatch.dylib                   0x000000010503556c _dispatch_queue_override_invoke + 980
+10  libdispatch.dylib                   0x000000010503ab54 _dispatch_root_queue_drain + 616
+11  libdispatch.dylib                   0x000000010503a880 _dispatch_worker_thread3 + 136
+12  libsystem_pthread.dylib             0x00000001868e7130 _pthread_wqthread + 1268
+13  libsystem_pthread.dylib             0x00000001868e6c30 start_wqthread + 4
+
+退出登录问题 点击不动= 添加一个cell解决此问题
+
+
+
+
+
+2002-04-07 周二 gzz20200407  赠书图片的替换 : 肝胆视频 新增最新最热
+videoByKeyWordsNew  接口名称 专家端：肝胆视频 
+patientVideoByKeyWordsNew 接口名称： 专家端 肝胆视频患者版
+
+videoByKeyWordsNew 接口名称：患者端 ：肝胆视频
+
+全部视频时 最热？呈现方式？ 此时筛选：无筛选内容 uuidCountCousult
+三个部分需要修改 以此类推
+
+                NSUserDefaults *expertInfo=[NSUserDefaults standardUserDefaults];
+                NSMutableArray *arrY=[NSMutableArray array];
+     if ([[expertInfo objectForKey:@"expertInfo"] isKindOfClass:[NSArray class]]) {
+                    arrY =  [NSMutableArray  arrayWithArray:[expertInfo objectForKey:@"expertInfo"]];;
+                }
+                
+                if ([arrY containsObject:two]) {
+
+//                         gzz20200407 公益咨询
+                                                NSMutableDictionary *mdic = [NSMutableDictionary dictionary];
+                                                NSString *keystr = [NSString stringWithFormat:@"%@uuidCountCousult",message.from];
+                                                mdic =  [NSMutableDictionary dictionaryWithDictionary:[theUserDefaultGcc objectForKey:keystr]];
+                                                NSString *countstr = [NSString stringWithFormat:@"%@",mdic[@"count"]];
+                                                NSString *todayDatestr = [NSString stringWithFormat:@"%@",[DicRemove todayDate]];
+                                                NSString *sendDatestr = [NSString stringWithFormat:@"%@",mdic[@"sendDate"]];
+                                                if ([todayDatestr isEqualToString:sendDatestr]) {
+                                                    NSInteger count = [countstr integerValue];
+                                                    count = count+1;
+                                                    mdic[@"count"] = [NSString stringWithFormat:@"%zd",count];
+
+                                                }else{
+
+                                                    mdic[@"count"] = @"1";
+                                                    mdic[@"sendDate"] = todayDatestr;
+
+                                                }
+                                                MCLog(@"mdic=count=off=%@",mdic[@"count"]);
+
+                                                [theUserDefaultGcc setObject:mdic forKey:keystr];
+                             
+//                    gzz20200407
+                     NSString *currentUuidstr = [NSString stringWithFormat:@"%@",[theUserDefaultGcc objectForKey:@"currentDocuuid"]];
+                        NSMutableDictionary *mdic = [NSMutableDictionary dictionary];
+                        NSString *keystr = [NSString stringWithFormat:@"%@uuidCount",currentUuidstr];
+                        mdic =  [NSMutableDictionary dictionaryWithDictionary:[theUserDefaultGcc objectForKey:keystr]];
+                        NSString *countstr = [NSString stringWithFormat:@"%@",mdic[@"count"]];
+                        NSString *todayDatestr = [NSString stringWithFormat:@"%@",[DicRemove todayDate]];
+                        NSString *sendDatestr = [NSString stringWithFormat:@"%@",mdic[@"sendDate"]];
+                        if ([todayDatestr isEqualToString:sendDatestr]) {
+                            NSInteger count = [countstr integerValue];
+                            count = count+1;
+                            mdic[@"count"] = [NSString stringWithFormat:@"%zd",count];
+
+                        }else{
+
+                            mdic[@"count"] = @"1";
+                            mdic[@"sendDate"] = todayDatestr;
+
+                        }
+                        MCLog(@"mdic=count=live=%@",mdic[@"count"]);
+
+                        [theUserDefaultGcc setObject:mdic forKey:keystr];
+
+
+  NSString *currentUuidstr = [NSString stringWithFormat:@"%@",[theUserDefaultGcc objectForKey:@"currentDocuuid"]];
+
+            NSMutableDictionary *mdic = [NSMutableDictionary dictionary];
+            NSString *keystr = [NSString stringWithFormat:@"%@uuidCount",currentUuidstr];
+            mdic =  [NSMutableDictionary dictionaryWithDictionary:[theUserDefaultGcc objectForKey:keystr]];
+
+            NSString *countstr = [NSString stringWithFormat:@"%@",mdic[@"count"]];
+            NSString *todayDatestr = [NSString stringWithFormat:@"%@",[DicRemove todayDate]];
+            NSString *sendDatestr = [NSString stringWithFormat:@"%@",mdic[@"sendDate"]];
+//
+            if ([todayDatestr isEqualToString:sendDatestr]) {
+                NSInteger count = [countstr integerValue];
+                count = count+1;
+                mdic[@"count"] = [NSString stringWithFormat:@"%zd",count];
+
+            }else{
+
+                mdic[@"count"] = @"1";
+                mdic[@"sendDate"] = todayDatestr;
+
+            }
+            MCLog(@"mdic=count==%@",mdic[@"count"]);
+
+            [theUserDefaultGcc setObject:mdic forKey:keystr];
+            
+
+//                  患者端 新增5条聊天提醒患者送花  gzz20200407
+ 
+
+  [theUserDefaultGcc setObject:self.experDocuuid forKey:@"currentDocuuid"];
+
+
+    NSMutableDictionary *mdicc = [NSMutableDictionary dictionary];
+    NSString *keystr = [NSString stringWithFormat:@"%@uuidCount",self.experDocuuid];
+    mdicc[@"docUuid"] = self.experDocuuid;
+    [theUserDefaultGcc setObject:mdicc forKey:keystr];
+    
+
+
+//    gzz20200407
+//    当前聊天医生的uuid
+    [theUserDefaultGcc setObject:self.experDocuuid forKey:@"currentDocuuid"];
+
+
+    NSMutableDictionary *mdicc = [NSMutableDictionary dictionary];
+    NSString *keystr = [NSString stringWithFormat:@"%@uuidCount",self.experDocuuid];
+    mdicc[@"docUuid"] = self.experDocuuid;
+    [theUserDefaultGcc setObject:mdicc forKey:keystr];
+
+
+#pragma mark 签到 覆盖signInView windowview背景
+- (SignInView *)signInView{
+    if (!_signInView) {
+        UIWindow *window = [UIApplication sharedApplication].keyWindow;
+        UIView *view11 = [[UIView alloc] init];
+        coverView = view11;
+        [window addSubview:view11];
+        view11.frame = [UIScreen mainScreen].bounds; //self.view.bounds; //
+        view11.backgroundColor = [UIColor colorWithWhite:0.0f alpha: 0.6];
+        
+        CGRect rect = CGRectMake(15, kTopHeight+70, SCREEN_WIDTH-30, 300);
+        _signInView = [[SignInView alloc] initViewWithFrame:rect];
+        [view11 addSubview:_signInView];
+        _signInView.backgroundColor = RGB(69, 198, 191);
+        _signInView.layer.cornerRadius = 8.0;
+        _signInView.layer.masksToBounds = YES;
+        WEAKSELFS
+        _signInView.deleImageBlock = ^(NSString *str) {
+            MCLog(@"strstr%@",str);
+            [weakSelf jumpUrl];
+        };
+        
+        UIImageView *bgimgvv0 = [UIImageView creatImageviewWithFrame:CGRectMake(SCREEN_WIDTH-40, CGRectGetMinY(_signInView.frame)-70, 20, 70) imaged:[UIImage imageNamed:@"friendDelBack"]];
+        [view11 addSubview:bgimgvv0];
+        
+        UIButton *btn = [[UIButton alloc]initWithFrame:CGRectMake(SCREEN_WIDTH-100, CGRectGetMinY(_signInView.frame)-70, 100, 70)];
+        [view11 addSubview:btn];
+        btn.backgroundColor = [UIColor clearColor];
+        [btn addTarget:self action:@selector(tapGestured2) forControlEvents:UIControlEventTouchUpInside];
+        
+//        UICollectionView
+    }
+    return _signInView;
+}
+
+
+  [UIView animateWithDuration:0.2 animations:^{
+            coverView.hidden = YES;
+            self.signInView.hidden = YES;
+    } completion:^(BOOL finished) {
+        coverView.hidden = YES;
+        self.signInView.hidden = YES;
+    }];
+
+
+
+#pragma mark 签到页面展示
+-(void)signInviewshow{
+    if (self.myBonusPointDicMM.count>0) {
+        coverView.hidden = NO;
+        self.signInView.hidden = NO;
+        [self.signInView initData:self.myBonusPointDicMM];
+    }
+}
+
+
+
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view, typically from a nib.
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [btn setImage:[UIImage imageNamed:@"024"] forState:UIControlStateNormal];
+    [btn setTitle:@"贵宾" forState:UIControlStateNormal];
+    btn.frame = CGRectMake(100, 100, 145, 60);
+    
+    [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    
+    btn.backgroundColor = [UIColor redColor];
+    btn.imageView.backgroundColor = [UIColor greenColor];
+    btn.titleLabel.backgroundColor = [UIColor yellowColor];
+    
+    // 上左下右
+    btn.contentEdgeInsets = UIEdgeInsetsMake(20, 0, 0, 0);
+    btn.titleEdgeInsets = UIEdgeInsetsMake(0, 20, 0, 0);
+//    btn.imageEdgeInsets = UIEdgeInsetsMake(50, 0, 0, 00);
+    
+    [self.view addSubview:btn];
+}
+
+
+
+
+2020-04-03 周五  gzz20200403 
+ 患者端的专家详情页面修改
+ 专家端首页图替换  
++我的福利接口调试 get、use 、recive接口调试 
+
+
+
+
+
+2020-04-02  周四 gzz20200402  
+ 0:拖动图标 周主任提的建议 --LookUnitTest 桌面 -#import "ViewController.h"中
+ 0.5 2002年4月份  审核 launchScreen.storyboard  详细见0402文件夹 https://www.jianshu.com/p/a76f02e777ac 设置一个xs max图片
+    https://juejin.im/post/5e1463d4f265da5d716e572d  第三种方案比较好
+ 
+
+   1：送花提醒  
+   首先确定是不是随访关系
+
+  
+    //gzz170405 这里送花的数目是会改变的 所以返回来时 要重新请求数据
+    //获取当前时间日期
+          NSDate *date=[NSDate date];
+          NSDateFormatter *format1=[[NSDateFormatter alloc] init];
+          [format1 setDateFormat:@"yyyy-MM-dd"];
+          NSString *dateStr;
+          dateStr=[format1 stringFromDate:date];
+          NSLog(@"%@",dateStr);
+//    if (是好友) {
+////        == 5
+//    }else{
+////        3
+//    }
+//    NSString *today = [NSString stringWithFormat:@"%@",[theUserDefaultGcc objectForKey:@"todayIsAlert"]];
+//
+//    if ([DicRemove isBlankString:today]) {
+//
+//    }else{
+//        if ([today isEqualToString:@"yes"]) {
+//
+//        }else{
+//            [theUserDefaultGcc setObject:@"yes" forKey:@"todayIsAlert"];
+//        }
+//
+//    }
+    NSString *dateIsSame = [NSString stringWithFormat:@"%@",[theUserDefaultGcc objectForKey:@"thisDate"]];
+    if ([DicRemove isBlankString:dateIsSame]) {
+//       第一次没有数据 或者是卸载重装
+         [theUserDefaultGcc setObject:dateStr forKey:@"thisDate"];
+    }else{
+        if ([dateIsSame isEqualToString:dateStr]) {
+//            日期与今天一样
+        }else{
+ //           日期与今天不一样
+                 [theUserDefaultGcc setObject:dateStr forKey:@"thisDate"];
+        }
+    
+    }
+    
+   免费随访患者规则： 保存本地 接口？？
+一天至多提醒一次；
+医生累计回复5次则弹窗提醒
+提醒后，回复累计从下个工作日有效开始；
+
+公益咨询规则(一对一模式)：
+一次公益咨询至多提醒一次；
+医生累计回复3次则弹窗提醒
+如果是随访医生抢答到，则按照随访医生规则走
+
+   
+   2：专家详情 
+
+    三甲医院？专家荣誉 ？？？ 接口  、跳转网页或者是作图展示
+
+   3：专家端-首页图片
+   
+   两个字 两个空格 其他一个空格
+   荣誉展示-显示简称 
+   专家端-我的-功能模块
+
+ 4：我的福利 接口待调试？ 后台还没写好
+
+
+
+
+
+

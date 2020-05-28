@@ -1,0 +1,753 @@
+2002-04-01       gzz20200401
+   下午任务  患者端 专家端 app最新任务 ---理发
+
+
+
+周三 1： 容联咨询我们是否使用问题
+2：总结看看关于使用AXB文档 4.1-->电话咨询服务-友商1
+3:问题：【隐藏】 收费咨询 暂未开放提示问题多个版本未上架可能会被拒绝；本身牵涉到收费问题（就要牵涉到内购问题）
+       
+
+2020-03-31 周二 gzz20200331三月的最后一天了
+               UI图片   结果是没让修改   我笑了
+               患者端：修改保存我的病历
+               专家端：首页修改图片 聊天内容修改 下载个患者端看能不能点动
+             
+云之讯： 等我们结果？？？微信？
+容联也问我们结果了
+@刘经理 总结文档 
+继续跟踪请每日完成健康上报
+
+
+
+2020-03-30 周一gzz20200330
+         云之讯： 等我们结果？？？微信？
+           专家端患者端新图代码  1：患者端UI更新了 明天图片
+                             2：专家端更新一点
+                             3：沈卫群老师的6splus 点击不动问题    20200513最后核实是证书问题
+                【老师手机32G、剩余2.2G : 
+                  1:手机升级iOS13.3.1版本之后本身就会卡点 13.3会死机重启？？
+                  2：壮壮手机升级了么？升级之后什么情况？
+                  3：宿舍手机测试机6plus 系统升级到14.1之后appstore不能下载东西了
+                  4：手机的其他的应用有过此类似的情况么？
+                  5：下载个患者端 看您能不能点击？周2 不卡 数据库的原因
+                  6：换个专家号测试  不卡数据库原因
+             
+   】
+                      
+           主要考虑号码隐藏这方面 signInBgInfoMy
+           
+
+  工作中遇到的问题：
+              1：界面适配问题 【出现新机型以及边界值没考虑到】 
+              2：请求数据问题 【传递参数、服务器处理不对】
+              3：页面显示问题 【使用官方不再支持的API】
+              4：上架Appstore问题<上传失败、审核不通过> 【证书配置、含有测试数据】
+              5
+调和鹰眼宿命
+
+
+
+2002-03-27 周五 
+            昨天晚上订单小号审核通过 星期二晚上过期 配合明明尽快测试；
+            点击拨号接口昨天自己没调试通过,今天看明明能不能调试通过
+           
+             九点左右开个小会？王和明
+             测试完毕 提交文档
+           
+
+2002-03-26 周四
+咨询中国移动 
+
+订单小号（axb）：申请订单小号 填写测试表  审核三个工作日，5个日期过后申请回收了；先不去申请了？
+下午
+
+点击拨号（双向回拨） 测试接口调试中。。。ios 安卓 后台？哈哈
+
+
+2020-03-25  周三 3.5.0版本通过审核  
+          任务一： 收集并整理电话问诊答案不懂的地方继续询问 然后将反馈结果给刘经理 容联还没给我文档
+          任务二：小程序的审核问题？ 见文档
+          任务三：确定哪家之后接口的调试等延后工作   调试了云之讯 明
+          任务四：可能找到方法了 详情见chatviewcontroller 牛
+ 
+
+2020-03-24 周二
+
+问他们有几种模式，拨打电话时候的方式
+
+涉及到医生 患者，我们平台三方
+  专家端适配3.4.9 审核通过 但是appstore上还没有通过 等会就行了
+  晓致、云之讯、容联，云信留客、云讯科技  重点考察
+
+关系号（AXB）
+AXB为单号双绑。可以将一个中间号码X分配给A和B组成一对关系。AB双方可以通过X互相联系对方，第三方无法呼通X。
+
+适用行业：出行、物流、在线咨询。
+
+特点：号码复用性高，需要的号码资源量较低，双边保密。
+
+三家 下午打电话：
+
+
+2020-03-23 -- 2020-03-27   锻炼身体 中午午休 或者 晚饭过后  出去走走 吸收阳光 你看看你自己 还有给你一样的么？就剩下你自己了12：30-13：00午休  晚上23：00 休息 若有意外提交申请 不要好了伤吧忘了痛 boy 经受不起了呢  记录下每一个话题 这就是生活
+
+
+ 本周任务： 继续上周“电话”咨询 ；如果可能调试 福利接口
+       记忆不在年轻 做好标记 比如：上周的电话号码 是哪家公司的，以及主要内容 日志：执行了  认真做好每一件事
+周一：工作内容 总结上周 电话问诊 6s上的适配问题  配合王成欣图片问题 
+周一下午主要工作：适配手机机型 5s出的问题 上架3.4.9版本
+
+lZODyXlwoMQOPrsSQ1K
+lZODyXlwoMQOPrsSQ1K
+ 
+
+
+
+周二 2020-03-17  ui图  根据UI 我的福利 设计图 完成80%
+周三 2020-03-18  我的福利 设计图 剩下的20%； 电话  视频  效果
+上午： 容联咨询 IM 音视频 落地电话；
+下午： 修改专家端东西  
+                   下载 查看 点击 ;        
+                   首页 审核患者 小红点 ： 我的患者 小红点  ；专家端 新随访 位于首页面 后台-》前端 无红点修改
+
+2020-03-19  周四
+      专家端审核通过 修改版本号设置 测试上线版本新功能 
+       
+     关键词   落地电话  电话问诊  医患电话  微医 快速问医生  移动医疗
+    
+    容联今天要问的 费用 以及 配合测试
+
+亮亮 壮壮：说咱弄的东西，出现连接失败之后，点击重连 ；也连不上；需要重新登录； 需要咨询 容联的人 ？ 周五已更新方法 待验证是否好的
+
+
+
+
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(ShowNewPatient) name:@"SHOWNEWPATIENTSQ" object:nil];
+
+
+
+周一  20200316 下个专家端版本
+//    gzz20200316
+
+//懒加载TableView
+- (UITableView *)tableView{
+    if (!_tableView) {
+        CGRect tableRect = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT-SafeAreaBottomHeight-40-bgHeightBottom);
+        _tableView = [[UITableView alloc]initWithFrame:tableRect style:UITableViewStyleGrouped];
+        _tableView.delegate = self;
+        _tableView.dataSource = self;
+//        _tableView.bounces = YES;
+        _tableView.showsVerticalScrollIndicator = NO;
+        _tableView.tableFooterView = [UIView new];
+        _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+        
+//        _tableView.estimatedRowHeight = 60;
+//        _tableView.rowHeight = UITableViewAutomaticDimension;
+//        _tableView.estimatedRowHeight = 0;
+//        _tableView.estimatedSectionHeaderHeight = 0;
+//        _tableView.estimatedSectionFooterHeight = 0;
+        if (@available (iOS 11.0,*)) {
+            _tableView.contentInsetAdjustmentBehavior  = UIScrollViewContentInsetAdjustmentNever;
+        }
+        [self.view addSubview:_tableView];
+    }
+    return _tableView;
+}
+-(NSMutableArray *)dataArray{
+    if (!_dataArray) {
+        _dataArray = [NSMutableArray array];
+    }
+    return _dataArray;
+}
+
+
+
+
+
+
+
+2002-03-12 到京 
+2020-03-13 工作 早 7：45
+
+
+#import "WelfareDetialVC.h"
+
+
+   NewPersonDatacell *cell = [NewPersonDatacell cellWithTableView:tableView];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    cell.nameLabel.text = [self.dataArray objectAtIndex:indexPath.row];
+    cell.contentLab.text = [self.contentdataArray objectAtIndex:indexPath.row];
+    return  cell;
+
+
+
+//pragma mark 横线到最左边2
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath{
+    if ([cell respondsToSelector:@selector(setSeparatorInset:)])
+    {
+        [cell setSeparatorInset:UIEdgeInsetsZero];//UIEdgeInsetsMake(0, 0, 0, 15)
+    }
+    if ([cell respondsToSelector:@selector(setLayoutMargins:)])
+    {
+        [cell setLayoutMargins:UIEdgeInsetsZero];
+    }
+    
+}
+
+2020-03-07星期六
+肝胆学院进入
+0：继续教育 变成  群内交流 ;ok  === frame 往上了
+1:科研项目 ---》跳到了首页 通知 返回 ????    ComeInKY ok
+2:变大 -self.navigation.item = @"我的 继续教育  患教学堂"  viewwillappear ios_frame 
+3：
+
+2020-03-09
+1：亮亮返回患者端新版本问题修改
+2：专家端工作
+
+
+self.writeOrSaveStr
+        self.writeOrSaveStr = @"save";
+
+
+
+
+
+2020-03-02 星期一  gzz20200302
+ 1:小程序审核不通过原因 
+   https://developers.weixin.qq.com/community/develop/doc/00082e3a3c096880f9d81606751400
+ 2:患者端配合网页放大字体
+
+ 3：疾病信息 整理 待小贺设计一下
+ 4：疾病信息相关接口
+
+
+https://tapp.igandan.org/app/patientApp/disease
+https://tapp.igandan.org/app/patientAPI/addInterrogationStep1Info
+
+2020-03-02 患者端工程中test 测试专家端功能 可以删除 ？？？？
+问题： 从一问多答中 添加家庭联系人？
+1：疾病信息相关页面的处理  
+
+若选择的家庭联系人已经有疾病信息，则填写基本信息选项可以直接调用疾病信息 
+
+<一问多答第二个页面的修改> #import "OneToMoreBasicInfoTwoVC.h" 已修改
+
+2：小贺给图讨论
+3：明明设计接口   接口调试好了 
+
+下午提交测试 周六
+
+contentArr
+
+isMedicine  isAllergy
+
+
+ self.descrViewa.text = @"";
+ self.descrViewa.placeholder = @"服用恩替卡韦5个月;服用xxx1年; \n无耐药(最少需要描述5个字)";
+
+4：请求数据  ok
+2020-03-06  self.navigationItem.title = @"关于肝胆相照"; 后台的修改
+5：提交测试  周六提交测试
+
+
+
+-(void)needInfoRequest{
+
+    NSString *Strurl = [NSString
+                        stringWithFormat:@"%@addInterrogationStep1Info",Public_URLAPI];
+    NSMutableDictionary * dicM = [NSMutableDictionary dictionary];
+    dicM[@"client_type"] = [NSString stringWithFormat:@"%@",@"I"];//1
+    dicM[@"user_uuid"] = [NSString stringWithFormat:@"%@",[Dlpontlerexple shareIndence].uuidstring];//2
+    NSString *timestamp; //gzz181225
+    if ([DicRemove isBlankString:sysTimestr]) {
+        timestamp = [NSString stringWithFormat:@"%@",[DicRemove getNowTimeTimestamp]];
+    }else{
+        timestamp = sysTimestr;
+    }
+    dicM[@"timestamp"] = [NSString stringWithFormat:@"%@",timestamp];
+    dicM[@"version"] = [NSString stringWithFormat:@"%@",kVersion];
+ 
+    NSArray *arr = @[@"client_type",@"version",@"timestamp",@"user_uuid"];
+    
+    [GDNetworkManager postWithURLString:Strurl parameters:nil keys:arr parameterDic:dicM success:^(NSDictionary *dic) {
+        MCLog(@"data=addInterrogationStep1info=%@",dic);
+        NSString *code = [NSString stringWithFormat:@"%@",dic[@"code"]];
+        
+        if ([code isEqualToString:@"200"]) {
+            self.sdditional_infoStr = [NSString stringWithFormat:@"%@",dic[@"additional_info"]];
+            if ([self.sdditional_infoStr  isEqualToString:@"0"]) {
+                
+            [nextBtn setImage:[UIImage imageNamed:@"goperfect"] forState:0];
+            [nextBtn setTitle:@"个人信息不完整，去完善" forState:0];
+    
+            nextBtn.contentHorizontalAlignment = UIControlContentHorizontalAlignmentCenter;
+            [nextBtn layoutButtonWithEdgeInsetsStyle:UIButtonEdgeInsetsStyleRight imageTitleSpace:5 offset:1];
+            }else{
+                [nextBtn setTitle:@"下一步" forState:0];
+            }
+            [self.diseaseListMarry addObjectsFromArray:dic[@"diseaseList"]];
+            [self.familyListMarry addObjectsFromArray:dic[@"familyList"]];
+
+        }
+    
+        [MBProgressHUD hideHUDForView:self.view animated:YES];
+    } failure:^(NSError *error) {
+        MCLog(@"error%@",error);
+        
+        [MBProgressHUD hideHUDForView:self.view animated:YES];
+    }];
+}
+
+
+
+#import "FamilyContactNewcvVC.h"  self.navigationItem.title = @"new家庭联系人-疾病信息";
+
+#import "DiseasesInfoNewvcVC.h" 疾病信息 填写
+
+#import "DiseaseInfoShowVC.h" 疾病信息 --编辑
+
+
+下午14：00开会讨论3221
+设计图出来了 晚上9点刘经理审核通过
+
+
+  // gzz20200302
+
+2020-03-04星期三
+、、今天务必完成图上所示内容 周四接口 并提交测试 周五争取上架
+1：开始绘制图
+2：与明明沟通接口相关事宜
+3：
+
+请选择丙型基因型类型
+
+
+
+  if ([self.contentMarry[0] isEqualToString:@"请选择患病时长"]) {
+        [GccObject presentAlertViewWithTitle:@"温馨提示" message:@"请选择患病时长" confirmTitle:@"确定" handler:^{
+        }];
+    }else if([self.contentMarry[1] isEqualToString:@"请选择目前肝脏状态"]){
+        [GccObject presentAlertViewWithTitle:@"温馨提示" message:@"请选择目前肝脏状态" confirmTitle:@"确定" handler:^{
+        }];
+    }else if([self.contentMarry[2] isEqualToString:@"是否用药"]){
+        [GccObject presentAlertViewWithTitle:@"温馨提示" message:@"是否用药" confirmTitle:@"确定" handler:^{
+        }];
+    }else{
+        if ([self.contentMarry[2] isEqualToString:@"有"]) {
+            if (self.descrViewa.text.length<5) {
+                [GccObject presentAlertViewWithTitle:@"温馨提示" message:@"用药描述最少五个字" confirmTitle:@"确定" handler:^{
+                }];
+                return;
+            }
+
+        }
+        
+        if (self.other_diseaseStr.length<=0) {
+          
+        [GccObject presentAlertViewWithTitle:@"温馨提示" message:@"请选择是否合并其他慢性疾病" confirmTitle:@"确定" handler:^{
+        }];
+        return;
+    
+            
+        }
+ 
+
+   
+
+
+    dicM[@"family_uuid"] = [NSString stringWithFormat:@"%@",self.family_uuidStr];
+    dicM[@"disease_uuid"] = [NSString stringWithFormat:@"%@",self.disease_uuidStr];
+    dicM[@"go_hospital"] = [NSString stringWithFormat:@"%@",self.go_hospitalStr];
+    
+    dicM[@"disease_date"] = [NSString stringWithFormat:@"%@",self.disease_dateLongStr];
+    dicM[@"liver_status"] = [NSString stringWithFormat:@"%@",self.liver_statusStr];
+    dicM[@"boolean_medication"] = [NSString stringWithFormat:@"%@",self.boolean_medicationStr];
+    if ([DicRemove isBlankString:self.descrViewa.text]) {
+        self.descrViewa.text = @"";
+    }
+    dicM[@"medication_info"] = [NSString stringWithFormat:@"%@",self.descrViewa.text];
+    dicM[@"other_disease"] = [NSString stringWithFormat:@"%@",self.other_diseaseStr];
+    dicM[@"debug"] = [NSString stringWithFormat:@"%@",@"true"];
+
+
+
+-(void)familyListRequest{
+//    /familyList
+    [MBProgressHUD hideHUDForView:self.view animated:YES];
+    NSString *Strurl = [NSString stringWithFormat:@"%@familyList",Public_URLAPI];
+    NSMutableDictionary * dicM = [NSMutableDictionary dictionary];
+    dicM[@"client_type"] = [NSString stringWithFormat:@"%@",@"I"];//1
+    dicM[@"user_uuid"] = [NSString stringWithFormat:@"%@",[Dlpontlerexple shareIndence].uuidstring];//2
+    NSString *timestamp; //gzz181225
+    if ([DicRemove isBlankString:sysTimestr]) {
+        timestamp = [NSString stringWithFormat:@"%@",[DicRemove getNowTimeTimestamp]];
+    }else{
+        timestamp = sysTimestr;
+    }
+    dicM[@"timestamp"] = [NSString stringWithFormat:@"%@",timestamp];
+    dicM[@"version"] = [NSString stringWithFormat:@"%@",kVersion];
+    NSArray *arr = @[@"client_type",@"version",@"timestamp",@"user_uuid"];
+    //    https://tapp.igandan.org/app/patientAPI/familyList
+
+    [GDNetworkManager postWithURLString:Strurl parameters:nil keys:arr parameterDic:dicM success:^(NSDictionary *dic) {
+        MCLog(@"data=didi=%@",dic);
+        NSString *code = [NSString stringWithFormat:@"%@",dic[@"code"]];
+        
+        if ([code isEqualToString:@"200"]) {
+            
+            NSArray *arr1 = [NSArray  yy_modelArrayWithClass:[FamilyContactsModel class] json:dic[@"data"]];
+            [self.dataArray addObjectsFromArray:arr1];
+            
+            NSString *additional_infostr = [NSString stringWithFormat:@"%@",dic[@"additional_info"]];
+            additional_infoStr = additional_infostr;
+            if ([additional_infostr isEqualToString:@"1"]) {
+                [contactsBtn setTitle:@"添加家庭联系人" forState:0];
+                contactsBtn.hidden = NO;
+            }else{
+                [contactsBtn setTitle:@"个人信息不完整，去完善" forState:0];
+                contactsBtn.hidden = NO;
+            }
+            NSInteger cout = self.dataArray.count;
+            self.topLabel.text = [NSString stringWithFormat:@"已添加%zd人，还能添加%zd人",cout,(8-cout)];
+            
+        }else{
+            
+            [self showHint:dic[@"message"]];
+        }
+        if (self.dataArray.count>0) {
+            [self removeShowMessage];
+        }else{
+            [self createShowMessage:@"暂无数据"];
+        }
+        [self.tableView reloadData];
+        
+        [MBProgressHUD hideHUDForView:self.view animated:YES];
+    } failure:^(NSError *error) {
+        MCLog(@"error%@",error);
+        [MBProgressHUD hideHUDForView:self.view animated:YES];
+    }];
+}
+
+
+
+如（丙型肝炎的uuid，5,1b型-丙型肝炎的uuid，2,2b型-甲型肝炎uuid,4,）
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+20200203-20200207
+上架专家端3.4.2 
+  1：专家二维码分享
+  2：文献搜索 
+  3：轮播图 肝胆视频
+
+
+本周工作计划：3.4.5版本优化和bug 【本周三计划上线】(1:文本框文字保存; 2:个人资料页面，针对微信端注册的女性用户，是否怀孕等选项不显示的问题;3:如有可能配合后台调试网页字体等)
+
+
+一：工作跟正常上班比较占比接近100%：【工作日八点五十左右到12点，下午2点到6点多点； 平时有时间晚上会工作一会,有两天还干到九点左右；有一个周六干过半天活调试推送测试】
+
+二：发布患者端版本3.4.1 ；3.4.2； 3.4.5 小程序发布版本
+
+三：主要工作内容：1：患者端和专家端 iOS13系统消息推送不提示 配合容联技术人员解决问题； 2：调试专家端分享门诊链接解析并发送给患者；3：小程序的视频详情内容的修改；4：个人资料页面，针对微信端注册的女性用户，是否怀孕等选项不显示的问题；个人资料页面存在提交后闪退的bug，以及体重一栏显示（null）.0kg的情况；5：统计文本保存（肝胆家园，免费咨询等）文字保存；6：积分商城轮播图存在标题显示不全的问题；7：配合后台调试网页字体等；页肝纤维工具的广告横幅，选择输入框时存在放大显示的适配问题；8：在先兑换选择1 2 3展示样式修改；9：协助专家端一点工作；10：疾病信息准备工作和其他的一些优化等。
+
+
+
+
+
+2020-02-10--2020-02-14
+ 患者端3.4.1/2 消息推送 配合容联技术人员
+行政反馈bug
+1：iOS患者端，个人资料页面存在提交后闪退的bug，以及体重一栏显示（null）.0kg的情况
+2：微信端注册 女 22岁时的特殊处理 修改个人资料
+3：iOS患者端，积分商城轮播图存在标题显示不全的问题
+4：一些优化excel
+
+
+ 专家端3.4.3 消息推送 配合容联技术人员 下周吧 2.14后
+1：随访计划不展示已过期的，只显示当前日期及以后的数据  后台修改
+
+2：医生出停诊计划模块增加通知患者的提醒
+2-1. 门诊详情页面优化：xxx医生门诊安排；<可以去掉 分享？明明
+
+2-2. 专家端：聊天窗口，若没有设置出/停诊公告，则灰色，点击的话，弹框提醒为设置，并提示是否前往设置；若已设置，则颜色正常，直接分享其门诊详情页面  不是太明白？？ 
+
+2-3. 若医生设置或者修改了出/停诊通知，如何更好的告诉其随访患者？？ 能否自动在聊天窗口给所有人发链接？(单次或分批) 跳到群发消息？？？ 自动或引导群发？？？
+
+
+2020-02-13 再次上传版本
+
+下午 调试发送停诊公告的链接
+群发时  上传给后台？ 明明那边要不要修改？
+
+
+2020-02-14
+容联聊天 可以了
+
+患者端：保存内容都有那几部分 建议常用的那几项即可
+
+专家端问题：
+0：随访计划不展示已过期的，只显示当前日期及以后的数据  后台修改
+1：门诊链接 解析不了？
+2：群发上传给后台 返回消息列表内容展示？接口
+3：
+
+
+2020-02-17
+患者端
+1：统计文本保存
+type(1新闻，2会议，3肝胆家园，4病例讨论，5病例分享，6肝胆活动，7科普文章 8 视频  9 临床招募 )
+
+肝胆医院评论 
+
+肝胆家园 肝胆活动 临床招募
+
+1：收货详细地址  以前有保留
+2：创建病历 3：评论 4：回复 5：肝胆家园发布新话题 6：肝胆医院-评分评论-留言评论 7：公益咨询（一对一发起咨询;一问多答：疾病描述-咨询问题-问题补充）8：服务评价 9：表达暖暖心意 10：意见反馈 11：一问多答疾病信息
+
+
+1:肝胆家园-发布新话题
+2：意见反馈
+3：公益咨询（一对一发起咨询;一问多答：疾病描述-咨询问题-问题补充）
+4：创建病历 
+5：肝胆医院-评分评论-留言评论
+6：服务评价
+7：表达暖暖心意
+8：一问多答疾病信息
+9：各种评论
+10：各种回复
+
+
+
+
+
+专家端
+1：随访计划 后台
+2：调试网页保存专家信息  02-17 上午调试保存网页 没成功 下午继续调试
+
+02-17调试一下内容
+患者端：
+//1. 意见反馈
+2. 一对一公益咨询：问题描述
+3. 一问多答：疾病描述、问题补充
+4. 肝胆家园新话题
+
+专家端：
+//1. 意见反馈
+2. 一问多答，我要回答
+3. 病例交流-发布病例
+4. 发布停诊-备注
+
+02-17下午 更新小程序 患者端分享到小程序的 显示文字问题
+
+
+
+02-18 星期二
+患者端： 1：小程序 肝胆视频详情   还没做
+2：患者端的网页相关问题 给明明 还没做
+
+专家端：
+1：我的二维码 都让跳转到最新的 ok
+2： 群发消息 解析网页  //gzz20200203 咨询下容联的 人员
+//自己琢磨出一个方法可以了 2020 -02-18上午11:30
+3
+
+
+问题：
+A:webview的原理 橙小橙 ？？
+
+
+2.34rpx
+20*
+
+   <view class="look_count_row">
+            <!-- <text class="iconfont icon-iconfont-yanjing"></text> -->
+             <image mode="scaleToFill"  style='width:28.08rpx;height:28.08rpx;  position: relative;top:5rpx;' src='/images/eyeread.png'> </image>
+             <text class="look_count">{{item.readnum}}</text>
+            </view>
+
+          </view>
+
+
+2020-02-19 星期三
+
+专家端：我的二维码  网页二维码没有啦？ ok了可能是网不好
+
+网页相关的东西 需要改的给明明说下
+「患者端 
+1：患者端自我诊断--用药宝典--药品说明，详情页建议增加字体放大功能
+2：患者端自我诊断--肝胆疾病库，详情页底部显示的目录问题
+专家端
+1：门诊分享 多了一个返回按钮」
+
+
+1：Count不一样时
+2：[theUserDefaultGcc setObject:@"yes" forKey:@"modifyMenzhen"];
+
+2020-02-20星期四 
+开会
+1：小程序 跳到哪里链接？？
+2：新的内容
+周三讨论下一轮 内容
+
+
+
+
+
+2020-02-24 周一
+专家端
+1：就是原本我要回答，带了保存。但是当提交后，变成了我要编辑-这里点进去是该显示保存的草稿还是和原文一样？
+2：小程序重新改
+3：
+
+
+
+
+
+
+
+
+
+
+
+@property(nonatomic,strong)SignInView * signInView;
+
+
+   UIView *coverView;//背景全屏
+
+ isSignIn = YES;
+
+
+#pragma mark 签到页面展示
+-(void)signInviewshow{
+    if (self.myBonusPointDicMM.count>0) {
+        coverView.hidden = NO;
+        self.signInView.hidden = NO;
+        [self.signInView initData:self.myBonusPointDicMM];
+        
+    }
+}
+
+
+
+#pragma mark 覆盖背景
+- (SignInView *)signInView{
+    if (!_signInView) {
+        
+        UIWindow *window = [UIApplication sharedApplication].keyWindow;
+        UIView *view11 = [[UIView alloc] init];
+        coverView = view11;
+        [window addSubview:view11];
+        view11.frame = [UIScreen mainScreen].bounds; //self.view.bounds; //
+        view11.backgroundColor = [UIColor colorWithWhite:0.0f alpha: 0.6];
+        
+        
+        CGRect rect = CGRectMake(15, 64+110, SCREEN_WIDTH-30, 300);
+        _signInView = [[SignInView alloc] initViewWithFrame:rect];
+        //        [_signInView initData:[NSDictionary dictionary]];
+        [view11 addSubview:_signInView];
+        _signInView.backgroundColor = RGB11(255, 161, 24);
+        _signInView.layer.cornerRadius = 8.0;
+        _signInView.layer.masksToBounds = YES;
+        WEAKSELFS
+        _signInView.deleImageBlock = ^(NSString *str) {
+            MCLog(@"strstr%@",str);
+            [weakSelf jumpUrl];
+        };
+        
+        
+        UIImageView *bgimgvv0 = [UIImageView creatImageviewWithFrame:CGRectMake(SCREEN_WIDTH-40, CGRectGetMinY(_signInView.frame)-70, 20, 70) imaged:[UIImage imageNamed:@"friendDelBack"]];
+        [view11 addSubview:bgimgvv0];
+        
+        UIButton *btn = [[UIButton alloc]initWithFrame:CGRectMake(SCREEN_WIDTH-80, CGRectGetMinY(_signInView.frame)-70, 60, 70)];
+        [view11 addSubview:btn];
+        btn.backgroundColor = [UIColor clearColor];
+        [btn addTarget:self action:@selector(tapGestured2) forControlEvents:UIControlEventTouchUpInside];
+        
+        
+    }
+    return _signInView;
+}
+
+
+- (void)tapGestured2 //签到页面消失
+{
+    
+    [UIView animateWithDuration:0.2 animations:^{
+        
+        MClogFunc
+        //        if (isHide) {
+        coverView.hidden = YES;
+        self.signInView.hidden = YES;
+        
+        isHide = NO;
+     
+        
+    } completion:^(BOOL finished) {
+        coverView.hidden = YES;
+        self.signInView.hidden = YES;
+        MClogFunc
+        isHide = NO;
+        
+        //        [coverView removeFromSuperview];
+        
+    }];
+    
+}
+
+  coverView.hidden = YES;
+   self.signInView.hidden = YES;
+
+
+
+#import "SignInView.h"
+
+
+
+
+  WEAKSELFS
+           UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"温馨提示" message:@"是否保存文字以便下次编辑？" preferredStyle:(UIAlertControllerStyleAlert)];
+           UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:(UIAlertActionStyleCancel) handler:^(UIAlertAction *action) {
+               // 点击按钮后的方法直接在这里面写
+               MCLog(@"取消");
+               [theUserDefaultGcc setObject:@"" forKey:@"queSupContent"];
+
+               [weakSelf.navigationController popViewControllerAnimated:YES];
+
+               
+           }];
+
+           [alertController addAction:cancelAction];
+
+
+           UIAlertAction *sureAction = [UIAlertAction actionWithTitle:@"确定" style:(UIAlertActionStyleDefault) handler:^(UIAlertAction *action) {
+            [theUserDefaultGcc setObject:_descrtextViewOne.text forKey:@"queSupContent"];
+            [weakSelf.navigationController popViewControllerAnimated:YES];
+
+           }];
+           [alertController addAction:sureAction];
+           [self presentViewController:alertController animated:YES completion:nil];
+
+
+
+
+
+
+
+
+
+
+
+
